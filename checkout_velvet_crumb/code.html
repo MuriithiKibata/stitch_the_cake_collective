@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Velvet &amp; Crumb - Checkout</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#3a4a49",
+                        "on-surface": "#2b1613",
+                        "secondary": "#516161",
+                        "tertiary-fixed-dim": "#cdc897",
+                        "error": "#ba1a1a",
+                        "surface": "#fff8f6",
+                        "inverse-primary": "#debfc2",
+                        "surface-container-high": "#ffe2dd",
+                        "on-secondary-fixed": "#0e1e1e",
+                        "surface-container-highest": "#ffdad4",
+                        "surface-tint": "#70585b",
+                        "inverse-on-surface": "#ffedea",
+                        "tertiary": "#636037",
+                        "on-surface-variant": "#4f4445",
+                        "on-background": "#2b1613",
+                        "primary-fixed": "#fbdbde",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-surface": "#422a26",
+                        "surface-container": "#ffe9e5",
+                        "background": "#fff8f6",
+                        "tertiary-fixed": "#eae4b1",
+                        "on-primary-fixed-variant": "#574144",
+                        "on-tertiary-container": "#69653c",
+                        "on-primary-container": "#765e61",
+                        "secondary-container": "#d4e6e5",
+                        "primary-container": "#fadadd",
+                        "surface-dim": "#f8d1cb",
+                        "tertiary-container": "#e9e4b0",
+                        "on-tertiary-fixed": "#1e1c00",
+                        "on-tertiary-fixed-variant": "#4b4822",
+                        "surface-variant": "#ffdad4",
+                        "surface-container-low": "#fff0ee",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#d4e6e5",
+                        "surface-bright": "#fff8f6",
+                        "on-error-container": "#93000a",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed-dim": "#debfc2",
+                        "secondary-fixed-dim": "#b8cac9",
+                        "error-container": "#ffdad6",
+                        "on-primary": "#ffffff",
+                        "on-secondary-container": "#576867",
+                        "primary": "#70585b",
+                        "outline-variant": "#d2c3c4",
+                        "on-primary-fixed": "#281719",
+                        "outline": "#807475"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "container-max": "1280px",
+                        "unit": "4px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Playfair Display"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "headline-sm": ["Playfair Display"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "display-lg": ["Playfair Display"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        .soft-shadow {
+            box-shadow: 0 4px 20px rgba(62, 39, 35, 0.08);
+        }
+        .input-elegant {
+            background-color: theme('colors.surface-container-lowest');
+            border: 1px solid theme('colors.primary');
+            transition: all 0.2s ease;
+        }
+        .input-elegant:focus {
+            outline: none;
+            border-width: 2px;
+            box-shadow: 0 0 0 2px rgba(112, 88, 91, 0.2);
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+<!-- TopNavBar Omitted as Checkout is a transactional/linear page -->
+<header class="w-full py-6 flex justify-center items-center bg-surface border-b border-surface-container-low shadow-sm">
+<h1 class="text-headline-md font-headline-md text-on-surface">Velvet &amp; Crumb</h1>
+</header>
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12">
+<div class="mb-10 text-center">
+<h2 class="text-display-lg-mobile md:text-display-lg font-display-lg-mobile md:font-display-lg text-primary mb-2">Secure Checkout</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant">Review your artisanal selections and complete your order.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Left Column: Checkout Forms -->
+<div class="lg:col-span-7 space-y-8">
+<!-- Shipping Address -->
+<section class="bg-surface-container-lowest rounded-xl soft-shadow p-6 md:p-8">
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">local_shipping</span>
+                        Shipping Information
+                    </h3>
+<div class="space-y-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<label class="block text-label-md font-label-md text-on-surface-variant mb-1">First Name</label>
+<input class="input-elegant w-full rounded-lg px-4 py-3 text-body-md font-body-md" required placeholder="Jane" type="text"/>
+</div>
+<div>
+<label class="block text-label-md font-label-md text-on-surface-variant mb-1">Last Name</label>
+<input class="input-elegant w-full rounded-lg px-4 py-3 text-body-md font-body-md" required placeholder="Doe" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-label-md font-label-md text-on-surface-variant mb-1">Street Address</label>
+<input class="input-elegant w-full rounded-lg px-4 py-3 text-body-md font-body-md" required placeholder="123 Patisserie Lane" type="text"/>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="col-span-2">
+<label class="block text-label-md font-label-md text-on-surface-variant mb-1">City</label>
+<input class="input-elegant w-full rounded-lg px-4 py-3 text-body-md font-body-md" required placeholder="Paris" type="text"/>
+</div>
+<div>
+<label class="block text-label-md font-label-md text-on-surface-variant mb-1">State/Province</label>
+<input class="input-elegant w-full rounded-lg px-4 py-3 text-body-md font-body-md" required placeholder="NY" type="text"/>
+</div>
+<div>
+<label class="block text-label-md font-label-md text-on-surface-variant mb-1">Postal Code</label>
+<input class="input-elegant w-full rounded-lg px-4 py-3 text-body-md font-body-md" required placeholder="10001" type="text"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Payment Method -->
+<section class="bg-surface-container-lowest rounded-xl soft-shadow p-6 md:p-8">
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">credit_card</span>
+                        Payment Method
+                    </h3>
+<div class="space-y-4">
+<label class="flex items-center p-4 border border-outline-variant rounded-lg cursor-pointer hover:bg-surface-container-low transition-colors">
+<input checked="" class="text-primary focus:ring-primary h-5 w-5" name="payment" type="radio"/>
+<span class="ml-3 text-body-md font-body-md text-on-surface">Credit Card</span>
+<span class="ml-auto material-symbols-outlined text-on-surface-variant">payments</span>
+</label>
+<div class="p-4 bg-surface-container-low rounded-lg space-y-4">
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1">Card Number</label>
+<input class="input-elegant w-full rounded-lg px-4 py-2 text-body-md font-body-md" placeholder="•••• •••• •••• ••••" type="text" required/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1">Expiration Date</label>
+<input class="input-elegant w-full rounded-lg px-4 py-2 text-body-md font-body-md" placeholder="MM/YY" type="text" required/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1">CVC</label>
+<input class="input-elegant w-full rounded-lg px-4 py-2 text-body-md font-body-md" placeholder="123" type="text" required/>
+</div>
+</div>
+</div>
+<label class="flex items-center p-4 border border-outline-variant rounded-lg cursor-pointer hover:bg-surface-container-low transition-colors">
+<input class="text-primary focus:ring-primary h-5 w-5" name="payment" type="radio"/>
+<span class="ml-3 text-body-md font-body-md text-on-surface">Digital Wallet</span>
+<span class="ml-auto material-symbols-outlined text-on-surface-variant">account_balance_wallet</span>
+</label>
+</div>
+</section>
+</div>
+<!-- Right Column: Order Summary & Cart -->
+<div class="lg:col-span-5 space-y-6">
+<section class="bg-primary/5 rounded-xl soft-shadow p-6 md:p-8 sticky top-6">
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-6">Order Summary</h3>
+<!-- Vendor 1 -->
+<div class="mb-6 pb-6 border-b border-outline-variant/30">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-sm">storefront</span>
+<h4 class="text-label-md font-label-md text-on-surface">From The Golden Whisk</h4>
+</div>
+<div class="flex gap-4 mb-3">
+<div class="w-16 h-16 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="A close-up shot of an elegant, multi-layered crêpe cake on a delicate ceramic plate. Soft, natural daylight illuminates the smooth cream layers and golden edges of the thin crêpes. The background is a blurred, airy patisserie setting with subtle hints of mint and soft pink tones, emphasizing a refined, artisanal aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXODWwVXIQ6Utupe__Ap4xxwBMo1KSmGh_CKiEgo4Uq296D-RZ5utqyep-7PFRWfrWuxgOfbLNfNbJhplkZQspfehdSBBRxb3Cj6NsLL_1L8Oymgx-PydG5iKXEN6k8DJa_H6OfQ0wmi6G2s01M9PW0bwNWFQxI8jY0uDWBnEOUSUgYUfFW87xKHVMkysQT1H78kaKrrKb8mHhTDoPSnmwrg2kCb5Yrh_uOEdtty48gqab3XpVDbvxWLr39z4i9n6EL23zl6jEUVSz"/>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between">
+<span class="text-body-md font-body-md text-on-surface">1x Vanilla Bean Crêpe Cake</span>
+<span class="text-body-md font-body-md text-on-surface">$65.00</span>
+</div>
+<span class="text-label-sm font-label-sm text-secondary bg-secondary-container px-2 py-0.5 rounded-full inline-block mt-1">Gluten-Free</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-3 mt-2">
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1">Requested Delivery</label>
+<input class="input-elegant w-full rounded-md px-3 py-1.5 text-body-md font-body-md text-sm" type="date" required/>
+</div>
+</div>
+<!-- Vendor 2 -->
+<div class="mb-6 pb-6 border-b border-outline-variant/30">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-sm">storefront</span>
+<h4 class="text-label-md font-label-md text-on-surface">From Sugar Bloom</h4>
+</div>
+<div class="flex gap-4 mb-3">
+<div class="w-16 h-16 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="A dozen exquisitely decorated cupcakes arranged in a premium gift box. Each cupcake features elaborate, realistic buttercream flowers in pastel shades of pink, white, and soft yellow. The lighting is bright and soft, highlighting the delicate textures of the frosting against a clean, minimalist white table setting, conveying a sense of quiet luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi9Eq2SIgLS7HY2aWlXGK8tH9iz7RrzspUilunSFB4dmlSk8uU36e0Ovg1yRgfbCyGh95yCkmZYGDFsbqhnjxY3mNODAYTHvTWVcRtxyPqPfSblD1aZQAhG8T4b_7YwI3kPsQFht-1dNJRynDSa4jdKPnBZSN8pXyOuTu0R_25dqThXOsaJ060d_hyqSy3FO_BbvPCCYAz5-5tV7XVxwviv931q0iaUReA-olsleLN9pGIxBfsRUWnqGbqDw3PHE85bma1Iko_CcKK"/>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between">
+<span class="text-body-md font-body-md text-on-surface">12x Signature Floral Cupcakes</span>
+<span class="text-body-md font-body-md text-on-surface">$48.00</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-3 mt-2">
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1">Requested Delivery</label>
+<input class="input-elegant w-full rounded-md px-3 py-1.5 text-body-md font-body-md text-sm" type="date" required/>
+</div>
+</div>
+<!-- Totals -->
+<div class="space-y-3 mb-6">
+<div class="flex justify-between text-body-md font-body-md text-on-surface-variant">
+<span>Subtotal</span>
+<span>$113.00</span>
+</div>
+<div class="flex justify-between text-body-md font-body-md text-on-surface-variant">
+<span>Shipping (The Golden Whisk)</span>
+<span>$15.00</span>
+</div>
+<div class="flex justify-between text-body-md font-body-md text-on-surface-variant">
+<span>Shipping (Sugar Bloom)</span>
+<span>$12.00</span>
+</div>
+<div class="flex justify-between text-headline-sm font-headline-sm text-on-surface pt-4 border-t border-outline-variant/30">
+<span>Total</span>
+<span>$140.00</span>
+</div>
+</div>
+<button class="w-full bg-on-surface text-on-primary font-label-md text-label-md py-4 rounded-xl hover:bg-surface-tint transition-colors duration-300 shadow-md flex justify-center items-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">lock</span>
+                        Place Order • $140.00
+                    </button>
+<p class="text-center text-label-sm font-label-sm text-on-surface-variant mt-4">
+                        By placing your order, you agree to our Terms &amp; Conditions and Privacy Policy.
+                    </p>
+</section>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-surface-container-highest mt-20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-16 w-full max-w-container-max mx-auto">
+<div class="md:col-span-1 mb-8 md:mb-0">
+<span class="text-headline-sm font-headline-sm text-primary">Velvet &amp; Crumb</span>
+<p class="text-body-md font-body-md text-on-surface-variant mt-4">Elevating everyday moments with artisanal confections.</p>
+</div>
+<div class="space-y-4">
+<a class="block text-body-md font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Join as a Baker</a>
+<a class="block text-body-md font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Sweet Deals Newsletter</a>
+</div>
+<div class="space-y-4">
+<a class="block text-body-md font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Our Story</a>
+<a class="block text-body-md font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Shipping &amp; Returns</a>
+</div>
+<div class="space-y-4">
+<a class="block text-body-md font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+</div>
+<div class="col-span-1 md:col-span-4 mt-12 pt-8 border-t border-outline-variant/30 text-center">
+<p class="text-label-md font-label-md text-on-surface-variant">© 2024 Velvet &amp; Crumb Artisanal Marketplace. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</body></html>

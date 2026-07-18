@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Velvet &amp; Crumb - Marketplace</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#fadadd",
+                    "on-secondary": "#ffffff",
+                    "surface-container": "#ffe9e5",
+                    "error-container": "#ffdad6",
+                    "on-error": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-background": "#2b1613",
+                    "background": "#fff8f6",
+                    "inverse-primary": "#debfc2",
+                    "secondary": "#516161",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#fff0ee",
+                    "surface-container-high": "#ffe2dd",
+                    "secondary-fixed": "#d4e6e5",
+                    "outline-variant": "#d2c3c4",
+                    "on-tertiary": "#ffffff",
+                    "surface-tint": "#70585b",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-container": "#69653c",
+                    "surface": "#fff8f6",
+                    "on-secondary-fixed-variant": "#3a4a49",
+                    "primary-fixed-dim": "#debfc2",
+                    "tertiary-fixed-dim": "#cdc897",
+                    "secondary-fixed-dim": "#b8cac9",
+                    "on-tertiary-fixed": "#1e1c00",
+                    "tertiary": "#636037",
+                    "surface-variant": "#ffdad4",
+                    "outline": "#807475",
+                    "inverse-on-surface": "#ffedea",
+                    "on-primary": "#ffffff",
+                    "primary": "#70585b",
+                    "on-tertiary-fixed-variant": "#4b4822",
+                    "surface-dim": "#f8d1cb",
+                    "on-primary-fixed-variant": "#574144",
+                    "on-primary-fixed": "#281719",
+                    "secondary-container": "#d4e6e5",
+                    "on-surface": "#2b1613",
+                    "surface-bright": "#fff8f6",
+                    "tertiary-container": "#e9e4b0",
+                    "surface-container-highest": "#ffdad4",
+                    "on-surface-variant": "#4f4445",
+                    "on-secondary-fixed": "#0e1e1e",
+                    "inverse-surface": "#422a26",
+                    "primary-fixed": "#fbdbde",
+                    "tertiary-fixed": "#eae4b1",
+                    "on-secondary-container": "#576867",
+                    "on-primary-container": "#765e61"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "4px",
+                    "margin-mobile": "16px",
+                    "container-max": "1280px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "display-lg": [
+                            "Playfair Display"
+                    ],
+                    "label-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-sm": [
+                            "Playfair Display"
+                    ],
+                    "body-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "label-sm": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-md": [
+                            "Playfair Display"
+                    ],
+                    "display-lg-mobile": [
+                            "Playfair Display"
+                    ],
+                    "body-lg": [
+                            "Plus Jakarta Sans"
+                    ]
+            },
+            "fontSize": {
+                    "display-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "56px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-sm": [
+                            "24px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "16px",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-md": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "display-lg-mobile": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hover-scale {
+            transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .hover-scale:hover {
+            transform: scale(1.02);
+        }
+        .soft-shadow {
+            box-shadow: 0 4px 20px rgba(62, 39, 35, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface shadow-sm sticky top-0 z-50">
+<div class="flex justify-between items-center px-margin-desktop py-4 w-full max-w-container-max mx-auto md:px-margin-desktop px-margin-mobile">
+<!-- Brand Logo -->
+<a class="text-headline-md font-headline-md text-on-surface" href="#">Velvet &amp; Crumb</a>
+<!-- Navigation Links (Desktop) -->
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 text-label-md font-label-md" href="#">Marketplace</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-label-md font-label-md" href="../the_golden_whisk_bakery_shop/code.html">Bakers</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-label-md font-label-md" href="../lavender_honey_cr_pe_cake_velvet_crumb/code.html">Gift of the Day</a>
+</div>
+<!-- Actions -->
+<div class="flex items-center space-x-4">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors duration-300 scale-up-102 transition-transform duration-200">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors duration-300 scale-up-102 transition-transform duration-200 hidden md:block">
+<span class="material-symbols-outlined">person</span>
+</button>
+<button class="md:hidden p-2 text-on-surface-variant">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 md:py-12">
+<!-- Breadcrumbs -->
+<nav aria-label="Breadcrumb" class="mb-8">
+<ol class="flex items-center space-x-2 text-label-sm font-label-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#">Home</a></li>
+<li><span class="material-symbols-outlined text-[14px]" data-icon="chevron_right">chevron_right</span></li>
+<li><a class="hover:text-primary transition-colors" href="#">Marketplace</a></li>
+<li><span class="material-symbols-outlined text-[14px]" data-icon="chevron_right">chevron_right</span></li>
+<li aria-current="page" class="text-primary font-medium">All Treats</li>
+</ol>
+</nav>
+<!-- Hero/Header Section -->
+<header class="mb-12 text-center md:text-left">
+<h1 class="text-display-lg-mobile md:text-display-lg font-display-lg-mobile md:font-display-lg text-on-surface mb-4">The Marketplace</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl">Discover an exquisite curation of artisanal pastries, bespoke cakes, and delicate confections from the city's finest bakers.</p>
+</header>
+<div class="flex flex-col lg:flex-row gap-gutter">
+<!-- Sidebar Filters -->
+
+<!-- Main Content Area -->
+<div class="w-full lg:w-3/4 flex flex-col">
+<!-- Sort & Count Bar -->
+<!-- Product Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-gutter gap-y-12">
+<!-- Product Card 1 -->
+<article class="group flex flex-col relative bg-surface rounded-xl overflow-hidden soft-shadow hover-scale">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img alt="Raspberry Rose Tart" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" data-alt="A high-resolution, appetizing photograph of a delicate raspberry rose tart with perfect glazed berries on top, presented on a minimalist white marble surface with soft, diffused light mode lighting and subtle pink blush tones in the background, conveying a premium artisanal patisserie aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBynjYgF9K_O9p1PvTrozVix46_2wvMd6zzpnNhDohtzv9PXW37u2_pxz5FtRuA5Kbm9Gdtq4xgG7XCE2LF3umZXuY7h8_y7tI8n9qGzD2ij-33Hyq8E4i8NayVCkHqDJNu_LOr3yu4utXkAMWVv47rpZ4omUEBRkqc_sYv1_lt0_rH1yTl8YyKbvl2BHmzoVK1r_utbTqI5hks2DEHlJNgodHNGHKBTxwwPjFEnDeN6XD1z0yFvT46ces3eCI8rE_rH2UT92R1S685"/>
+<button aria-label="Add to Favorites" class="absolute top-4 right-4 h-10 w-10 rounded-full bg-surface/80 backdrop-blur-sm flex items-center justify-center text-on-surface hover:text-primary hover:bg-surface transition-all duration-300">
+<span class="material-symbols-outlined text-[20px]" data-icon="favorite_border">favorite_border</span>
+</button>
+<div class="absolute bottom-4 left-4">
+<span class="inline-flex px-3 py-1 bg-surface-container/90 backdrop-blur-sm rounded-full text-label-sm font-label-sm text-primary uppercase tracking-wider">New</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-2">
+<h2 class="text-headline-sm font-headline-sm text-on-surface line-clamp-1">Raspberry Rose Tart</h2>
+<span class="text-headline-sm font-headline-sm text-on-surface ml-4">$12</span>
+</div>
+<p class="text-label-sm font-label-sm text-on-surface-variant mb-4 flex items-center">
+<span class="material-symbols-outlined text-[16px] mr-1" data-icon="storefront">storefront</span>
+                                The Golden Whisk
+                            </p>
+<div class="mt-auto pt-4 border-t border-surface-container-high opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<button class="w-full py-3 bg-surface-tint text-on-primary rounded-lg text-label-md font-label-md hover:bg-inverse-surface transition-colors" onclick="window.location.href='../checkout_velvet_crumb/code.html'">Add to Bag</button>
+</div>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="group flex flex-col relative bg-surface rounded-xl overflow-hidden soft-shadow hover-scale">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img alt="Pistachio Opera Cake" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" data-alt="A macro shot of beautifully layered pistachio and matcha opera cake, showcasing pristine green and chocolate layers. Set against a clean, warm white background in light mode, with a luxurious, indulgent atmosphere and a hint of soft mint secondary color styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY11_6Zz1rOwUxKg2-_oyjHz100cAqwJgxD0q9c4GpeS0FrgKSvbXHbD6s-sHLiI06Va52D2x-UsDwwnvuRLk2I6OGFc6paZ6ix39noeXYclfB-51s154cUQmGUJeIEHM3mhvimLQkd0LhHz7drkiK1geZbrnayEoLodTKP1gUUR2mhrH_GXtUbZqC7R64UYy_fPwlvk_SujdBf6gqhYItjWWOARt0uFUzTgqrYXDPvmEnC1xyxy4UEO4LgWogFGmxAfuR8Y2Dfn23"/>
+<button aria-label="Add to Favorites" class="absolute top-4 right-4 h-10 w-10 rounded-full bg-surface/80 backdrop-blur-sm flex items-center justify-center text-on-surface hover:text-primary hover:bg-surface transition-all duration-300">
+<span class="material-symbols-outlined text-[20px]" data-icon="favorite_border">favorite_border</span>
+</button>
+</div>
+<div class="p-5 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-2">
+<h2 class="text-headline-sm font-headline-sm text-on-surface line-clamp-1">Pistachio Opera</h2>
+<span class="text-headline-sm font-headline-sm text-on-surface ml-4">$14</span>
+</div>
+<p class="text-label-sm font-label-sm text-on-surface-variant mb-4 flex items-center">
+<span class="material-symbols-outlined text-[16px] mr-1" data-icon="storefront">storefront</span>
+                                Sugar Bloom Patisserie
+                            </p>
+<div class="mt-auto pt-4 border-t border-surface-container-high opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<button class="w-full py-3 bg-surface-tint text-on-primary rounded-lg text-label-md font-label-md hover:bg-inverse-surface transition-colors" onclick="window.location.href='../checkout_velvet_crumb/code.html'">Add to Bag</button>
+</div>
+</div>
+</article>
+<!-- Product Card 3 -->
+<article class="group flex flex-col relative bg-surface rounded-xl overflow-hidden soft-shadow hover-scale">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img alt="Signature Macaron Box" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" data-alt="An elegant box of six pastel-colored macarons arranged perfectly. Shot from slightly above with soft, flattering light-mode illumination. The background is a subtle creamy surface, emphasizing the delicate, artisanal quality of the confections in a high-end bakery style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnx0nDv1wst7sMc3I5Wnd_iQ_ywqg4LqiBAcgAQO1OgpD5EJBlSNdZ1emasYsVKQjkXve4rWaEUtsgilJv1e-14WI_nAWTf6lzwg73Ft8Jt-xzHtrgL198wvctPX61ORPf8EuouY6JVa4c9Xy60fgT1gK3t9F-X2OWOW7m1UR4i-tSfwwAD0sw03vbZFB8XT7BfguljfmSUZWUJmai_hImRrtFN26Q7v1EsJ-Li-xSR0t9HmfIUc7NKZKPLUjuObHm95ratkePN8P_"/>
+<button aria-label="Add to Favorites" class="absolute top-4 right-4 h-10 w-10 rounded-full bg-surface/80 backdrop-blur-sm flex items-center justify-center text-on-surface hover:text-primary hover:bg-surface transition-all duration-300">
+<span class="material-symbols-outlined text-[20px]" data-icon="favorite_border">favorite_border</span>
+</button>
+<div class="absolute bottom-4 left-4">
+<span class="inline-flex px-3 py-1 bg-secondary-container/90 backdrop-blur-sm rounded-full text-label-sm font-label-sm text-on-secondary-container uppercase tracking-wider">Gluten-Free</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-2">
+<h2 class="text-headline-sm font-headline-sm text-on-surface line-clamp-1">Signature Macarons</h2>
+<span class="text-headline-sm font-headline-sm text-on-surface ml-4">$24</span>
+</div>
+<p class="text-label-sm font-label-sm text-on-surface-variant mb-4 flex items-center">
+<span class="material-symbols-outlined text-[16px] mr-1" data-icon="storefront">storefront</span>
+                                Maison Blanche
+                            </p>
+<div class="mt-auto pt-4 border-t border-surface-container-high opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<button class="w-full py-3 bg-surface-tint text-on-primary rounded-lg text-label-md font-label-md hover:bg-inverse-surface transition-colors" onclick="window.location.href='../checkout_velvet_crumb/code.html'">Add to Bag</button>
+</div>
+</div>
+</article>
+<!-- Product Card 4 -->
+<article class="group flex flex-col relative bg-surface rounded-xl overflow-hidden soft-shadow hover-scale">
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img alt="Artisan Sourdough" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" data-alt="A rustic yet refined sourdough loaf with intricate scoring patterns, resting on a wooden board. The lighting is bright and airy, capturing a modern bakery light-mode aesthetic with a focus on tactile sophistication and the golden crust of the bread." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgix1YTWIN46ayXDcJkXx1Y10j7qdG_QTlrBWf0HhQh9UORxlS9NrsYxGFclyD1ItLY7deqmG9fc_sR7Fe6OL2vyIndMOcLB7WNhpEsLmeWjipPpf9HgVX2wEGoLojwGI3xgsioA3KpVIyNSlR_04uUiGh3Zmq8z5FNzlBgf5KVRaCC-UikVpzWsUlVBPGdokTNHsqS2cgL7PrP-SE1UmVFs3mXvA3FAjtqg6ahm0QkY2v2oigCHWYjHjvxH8f9rDrDgPA6fc7P1tx"/>
+<button aria-label="Add to Favorites" class="absolute top-4 right-4 h-10 w-10 rounded-full bg-surface/80 backdrop-blur-sm flex items-center justify-center text-on-surface hover:text-primary hover:bg-surface transition-all duration-300">
+<span class="material-symbols-outlined text-[20px]" data-icon="favorite_border">favorite_border</span>
+</button>
+</div>
+<div class="p-5 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-2">
+<h2 class="text-headline-sm font-headline-sm text-on-surface line-clamp-1">Artisan Sourdough</h2>
+<span class="text-headline-sm font-headline-sm text-on-surface ml-4">$9</span>
+</div>
+<p class="text-label-sm font-label-sm text-on-surface-variant mb-4 flex items-center">
+<span class="material-symbols-outlined text-[16px] mr-1" data-icon="storefront">storefront</span>
+                                Crumb &amp; Crust
+                            </p>
+<div class="mt-auto pt-4 border-t border-surface-container-high opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<button class="w-full py-3 bg-surface-tint text-on-primary rounded-lg text-label-md font-label-md hover:bg-inverse-surface transition-colors" onclick="window.location.href='../checkout_velvet_crumb/code.html'">Add to Bag</button>
+</div>
+</div>
+</article>
+<!-- Additional cards omitted for brevity in this example, but would continue grid -->
+</div>
+
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-surface-container-highest mt-auto border-t border-surface-container-high">
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-16 w-full max-w-container-max mx-auto text-on-surface dark:text-on-surface">
+<div class="col-span-1 sm:col-span-2 md:col-span-1 flex flex-col space-y-4">
+<div class="text-headline-sm font-headline-sm text-primary">Velvet &amp; Crumb</div>
+<p class="text-body-md font-body-md text-on-surface-variant mt-4">Curating the city's finest artisanal confections and baked goods for those with discerning taste.</p>
+</div>
+<div class="flex flex-col space-y-4">
+<h4 class="text-label-md font-label-md uppercase tracking-wider text-on-surface">Explore</h4>
+<a class="text-on-surface-variant text-body-md font-body-md hover:text-primary transition-colors" href="#">Join as a Baker</a>
+<a class="text-on-surface-variant text-body-md font-body-md hover:text-primary transition-colors" href="#">Our Story</a>
+</div>
+<div class="flex flex-col space-y-4">
+<h4 class="text-label-md font-label-md uppercase tracking-wider text-on-surface">Customer Care</h4>
+<a class="text-on-surface-variant text-body-md font-body-md hover:text-primary transition-colors" href="#">Shipping &amp; Returns</a>
+<a class="text-on-surface-variant text-body-md font-body-md hover:text-primary transition-colors" href="#">Privacy Policy</a>
+</div>
+<div class="flex flex-col space-y-4">
+<h4 class="text-label-md font-label-md uppercase tracking-wider text-on-surface">Connect</h4>
+<a class="text-on-surface-variant text-body-md font-body-md hover:text-primary transition-colors" href="#">Sweet Deals Newsletter</a>
+<div class="flex space-x-4 mt-2">
+<a aria-label="Instagram" class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="photo_camera">photo_camera</span>
+</a>
+<a aria-label="Pinterest" class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="push_pin">push_pin</span>
+</a>
+</div>
+</div>
+</div>
+<div class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-6 border-t border-surface-container">
+<p class="text-label-sm font-label-sm text-on-surface-variant text-center md:text-left">© 2024 Velvet &amp; Crumb Artisanal Marketplace. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

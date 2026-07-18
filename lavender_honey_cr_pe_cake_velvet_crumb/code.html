@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Velvet &amp; Crumb - Lavender Honey Crêpe Cake</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-error": "#ffffff",
+                      "on-secondary-fixed-variant": "#3a4a49",
+                      "on-surface": "#2b1613",
+                      "secondary": "#516161",
+                      "tertiary-fixed-dim": "#cdc897",
+                      "error": "#ba1a1a",
+                      "surface": "#fff8f6",
+                      "inverse-primary": "#debfc2",
+                      "surface-container-high": "#ffe2dd",
+                      "on-secondary-fixed": "#0e1e1e",
+                      "surface-container-highest": "#ffdad4",
+                      "surface-tint": "#70585b",
+                      "inverse-on-surface": "#ffedea",
+                      "tertiary": "#636037",
+                      "on-surface-variant": "#4f4445",
+                      "on-background": "#2b1613",
+                      "primary-fixed": "#fbdbde",
+                      "surface-container-lowest": "#ffffff",
+                      "inverse-surface": "#422a26",
+                      "surface-container": "#ffe9e5",
+                      "background": "#fff8f6",
+                      "tertiary-fixed": "#eae4b1",
+                      "on-primary-fixed-variant": "#574144",
+                      "on-tertiary-container": "#69653c",
+                      "on-primary-container": "#765e61",
+                      "secondary-container": "#d4e6e5",
+                      "primary-container": "#fadadd",
+                      "surface-dim": "#f8d1cb",
+                      "tertiary-container": "#e9e4b0",
+                      "on-tertiary-fixed": "#1e1c00",
+                      "on-tertiary-fixed-variant": "#4b4822",
+                      "surface-variant": "#ffdad4",
+                      "surface-container-low": "#fff0ee",
+                      "on-tertiary": "#ffffff",
+                      "secondary-fixed": "#d4e6e5",
+                      "surface-bright": "#fff8f6",
+                      "on-error-container": "#93000a",
+                      "on-secondary": "#ffffff",
+                      "primary-fixed-dim": "#debfc2",
+                      "secondary-fixed-dim": "#b8cac9",
+                      "error-container": "#ffdad6",
+                      "on-primary": "#ffffff",
+                      "on-secondary-container": "#576867",
+                      "primary": "#70585b",
+                      "outline-variant": "#d2c3c4",
+                      "on-primary-fixed": "#281719",
+                      "outline": "#807475"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-desktop": "64px",
+                      "container-max": "1280px",
+                      "unit": "4px",
+                      "gutter": "24px",
+                      "margin-mobile": "16px"
+              },
+              "fontFamily": {
+                      "headline-md": ["Playfair Display"],
+                      "display-lg-mobile": ["Playfair Display"],
+                      "label-sm": ["Plus Jakarta Sans"],
+                      "headline-sm": ["Playfair Display"],
+                      "body-md": ["Plus Jakarta Sans"],
+                      "display-lg": ["Playfair Display"],
+                      "body-lg": ["Plus Jakarta Sans"],
+                      "label-md": ["Plus Jakarta Sans"]
+              },
+              "fontSize": {
+                      "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                      "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                      "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-shadow-sm { text-shadow: 0 1px 2px rgba(62, 39, 35, 0.08); }
+        .box-shadow-ambient { box-shadow: 0 4px 24px -4px rgba(62, 39, 35, 0.08); }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-[#ffffff] shadow-sm sticky top-0 z-50">
+<div class="flex justify-between items-center px-margin-desktop py-4 w-full max-w-container-max mx-auto md:px-margin-desktop px-margin-mobile">
+<!-- Brand Logo -->
+<a class="text-headline-md font-headline-md text-on-surface" href="#">Velvet &amp; Crumb</a>
+<!-- Navigation Links (Desktop) -->
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 text-label-md font-label-md" href="../velvet_crumb_marketplace_home/code.html">Marketplace</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-label-md font-label-md" href="../the_golden_whisk_bakery_shop/code.html">Bakers</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 text-label-md font-label-md" href="../lavender_honey_cr_pe_cake_velvet_crumb/code.html">Gift of the Day</a>
+</div>
+<!-- Actions -->
+<div class="flex items-center space-x-4">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors duration-300 scale-up-102 transition-transform duration-200">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors duration-300 scale-up-102 transition-transform duration-200 hidden md:block">
+<span class="material-symbols-outlined">person</span>
+</button>
+<button class="md:hidden p-2 text-on-surface-variant">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 md:py-16">
+<!-- Breadcrumbs -->
+<nav aria-label="Breadcrumb" class="flex text-label-sm font-label-sm text-on-surface-variant mb-8">
+<ol class="inline-flex items-center space-x-1 md:space-x-3">
+<li class="inline-flex items-center hover:text-primary transition-colors cursor-pointer">
+              Marketplace
+            </li>
+<li>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-[16px] mx-1">chevron_right</span>
+<span class="hover:text-primary transition-colors cursor-pointer">Cakes</span>
+</div>
+</li>
+<li aria-current="page">
+<div class="flex items-center">
+<span class="material-symbols-outlined text-[16px] mx-1">chevron_right</span>
+<span class="text-on-surface font-semibold">Lavender Honey Crêpe Cake</span>
+</div>
+</li>
+</ol>
+</nav>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
+<!-- Gallery Section -->
+<div class="lg:col-span-7 flex flex-col gap-4">
+<div class="w-full aspect-[4/5] md:aspect-[3/2] lg:aspect-square rounded-xl overflow-hidden bg-surface-container-lowest box-shadow-ambient relative group">
+<img alt="Lavender Honey Crêpe Cake Main Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A meticulously crafted mille crêpe cake with delicate layers, tinged with a soft purple lavender hue, resting on a rustic white ceramic cake stand. Natural sunlight streams in, highlighting the glistening honey drizzle and a fresh sprig of lavender on top. The setting is a chic, airy patisserie with a soft pink and mint aesthetic. High-resolution food photography, tactile sophistication." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM4bkVEYgIbF1gOpd59Ozxq0YxkAQwgQMzXvORsLz-p2tnHpmXF8FLMyHvJel3PdoxpHA8ElM7wnFN0ZoWm9thLXEzikSfTW2pmSc4-GQlIj_x0uxv3AAqolQcBicUKLwQDnwzfyzRr70eLG51MDPzdXDKZvuc4Dg40oB0z7ugAhBavKE25EE0ItJCUwfD4btkmG3ZOuAm-WtLNnxcZW23nt1SbB8KGfq3ttJSc-D6wt9r6mvFPrTYmDePuHc7GFSAkrz_UgGEf4Tw"/>
+</div>
+<div class="grid grid-cols-4 gap-4">
+<button class="aspect-square rounded-lg overflow-hidden border-2 border-primary cursor-pointer opacity-100 hover:opacity-100 transition-opacity">
+<img alt="Detail 1" class="w-full h-full object-cover" data-alt="Close up detail shot of the twenty delicate layers of crêpe and lavender cream filling. The texture is soft and inviting, emphasizing artisanal quality in a refined, light-filled environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQpKdnsc59DBa_2o73MYNWAaOFAdUrJ1MSEC1n0IPdWfH4Zsf1QfTQpWOcdp9Wdj2qfQsd54CYu4nFy-l5NBWmWUtiuCHcD6nC7sz_h1latecfDKjOPLStJbUwMdY8QQ9iJKhZda9m2gIuRIAJZL-KtxQt0Bq8U1i6JUdPbYIK9_1B2lrSma-zXPzq6iXLAIcRuPiCfAsv_sy-iyofTr12ZAheh1VnKMPVndr4GTdRefPhIYM7Wma5TUJmtpywGYoLW0cKJ2T3Nttm"/>
+</button>
+<button class="aspect-square rounded-lg overflow-hidden border-2 border-transparent cursor-pointer opacity-70 hover:opacity-100 transition-all hover:border-primary-container">
+<img alt="Detail 2" class="w-full h-full object-cover" data-alt="A slice of the lavender honey crêpe cake being lifted on a silver pastry server, revealing the flawless layers. Soft pastel background with delicate depth of field, quiet luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd5r9_9L8FbDokRuM0Aot62IkAXnX-s6H4iTk3CdJyBSykIE8JKYAnIff82KJE6vhtYfrc8kPt9crBkCQWAkRS5Ry7RttbegH-mpcClMtwdlvSj_0TkSfmlv9vewQMyqSl2mcHXjXya7XpwE2KIgAhgsH6VINr48mhZozbR-ufBaOBIMMoaYOyWpxrlHaQPQXnqhFQYVN-RpmpHFPRB5701oiQC_pmutr_kDzW5mnOMgUFtLzhnSDaLOnXamEMCI7KK4PzY8s06wL-"/>
+</button>
+<button class="aspect-square rounded-lg overflow-hidden border-2 border-transparent cursor-pointer opacity-70 hover:opacity-100 transition-all hover:border-primary-container">
+<img alt="Detail 3" class="w-full h-full object-cover" data-alt="Overhead shot of the full cake on a marble counter top, surrounded by raw ingredients: a jar of artisan honey, dried lavender buds, and farm fresh eggs. Indulgent, bright, editorial style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbCd8Ur-oM8H7ZBUDt2IfeFAGXnDKmaqxWfvxagC7wOGLXpg8ookDDZOs2TlRIeEHOxkwzhG-7b-RYay6ZxVci5QP2DAy8rcRYcBhmzBHHkK0D1kZBRhGzgN0wJXwZHR0VEYlH0Atyg57k96YqMpiPPrHyM0ab1UQ1WW4GnNCHtRdo5-NThQusKEmdXViN8DNgMzmTymtHBCvueO9-EtrxjuTcTjM5toNqGxKVNzY39Mq6AYc2JTU_WOy7m_5vvDWSogGlJ8K5s9lF"/>
+</button>
+<button class="aspect-square rounded-lg overflow-hidden border-2 border-transparent cursor-pointer opacity-70 hover:opacity-100 transition-all hover:border-primary-container">
+<img alt="Detail 4" class="w-full h-full object-cover" data-alt="The cake placed in its premium Velvet &amp; Crumb luxury gifting box, wrapped with a delicate silk ribbon. Evokes delight, curation, and premium gifting experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV72uHc5wClLlf0B8gYXxh7c_Ro-varPSZCe_HZ9Wvany2iry7QatdCSTsHf6J18a0hgEVoTuY_jnmiUc6OS4IhD6xePr58TosGis0cKDFp0g6LAW_6zAMt13jS36Gi9saOA0WqNPQ_wgqA-LQsLtJ9uDjBUZ5qJLmVpY_ssWt0mzcglzIl6wy3yadQ2I_Rd6KICiOTDHRjx7lj1WndlLgIT2sn8ylllKRtIzLuKTEHiGEBW1s10SPUqGOq9_1AoNt0EMCpPK38bgt"/>
+</button>
+</div>
+</div>
+<!-- Product Info & Customization -->
+<div class="lg:col-span-5 flex flex-col pt-2 lg:pt-8">
+<div class="mb-6">
+<div class="flex items-center gap-2 mb-2">
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container text-label-sm font-label-sm rounded-full">Vegetarian</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant text-label-sm font-label-sm rounded-full">Best Seller</span>
+</div>
+<h1 class="text-display-lg-mobile md:text-display-lg font-display-lg-mobile md:font-display-lg text-on-surface mb-2">Lavender Honey Crêpe Cake</h1>
+<a class="text-body-md font-body-md text-primary hover:underline flex items-center gap-1 group w-max" href="#">
+                        By The Golden Whisk 
+                        <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="text-headline-md font-headline-md text-on-surface mb-6">
+                    $65.00 <span class="text-body-md font-body-md text-on-surface-variant font-normal">base price</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant mb-8 leading-relaxed">
+                    Twenty delicate, hand-made crêpes layered with our signature light pastry cream infused with locally sourced lavender and wild floral honey. A refined centrepiece for any celebration, evoking the essence of a spring garden.
+                </p>
+<!-- Configuration Form -->
+<form class="flex flex-col gap-6 w-full">
+<!-- Size Selection -->
+<div>
+<h3 class="text-label-md font-label-md text-on-surface mb-3 uppercase tracking-wider">Select Size</h3>
+<div class="grid grid-cols-3 gap-3">
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="size" type="radio" value="6"/>
+<div class="text-center py-3 px-4 rounded-lg border border-outline-variant peer-checked:border-primary peer-checked:bg-primary-container/20 hover:bg-surface-container-low transition-colors">
+<span class="block text-body-md font-body-md font-semibold text-on-surface">6" Petit</span>
+<span class="block text-label-sm font-label-sm text-on-surface-variant mt-1">Serves 4-6</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="size" type="radio" value="8"/>
+<div class="text-center py-3 px-4 rounded-lg border border-outline-variant peer-checked:border-primary peer-checked:bg-primary-container/20 hover:bg-surface-container-low transition-colors">
+<span class="block text-body-md font-body-md font-semibold text-on-surface">8" Classic</span>
+<span class="block text-label-sm font-label-sm text-on-surface-variant mt-1">Serves 8-10</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="size" type="radio" value="10"/>
+<div class="text-center py-3 px-4 rounded-lg border border-outline-variant peer-checked:border-primary peer-checked:bg-primary-container/20 hover:bg-surface-container-low transition-colors">
+<span class="block text-body-md font-body-md font-semibold text-on-surface">10" Grand</span>
+<span class="block text-label-sm font-label-sm text-on-surface-variant mt-1">Serves 12-16</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Base Flavor Options (Visual) -->
+<div>
+<h3 class="text-label-md font-label-md text-on-surface mb-3 uppercase tracking-wider">Crêpe Base</h3>
+<div class="flex gap-4">
+<button class="flex flex-col items-center gap-2 group" type="button">
+<div class="w-12 h-12 rounded-full bg-[#fdf5e6] border-2 border-primary flex items-center justify-center p-1 transition-transform group-hover:scale-105">
+<div class="w-full h-full rounded-full bg-[#fae9d1]"></div>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface font-semibold">Vanilla</span>
+</button>
+<button class="flex flex-col items-center gap-2 group opacity-60 hover:opacity-100 transition-opacity" type="button">
+<div class="w-12 h-12 rounded-full bg-[#e3d7e8] border-2 border-transparent flex items-center justify-center p-1 transition-transform group-hover:scale-105 group-hover:border-primary-container">
+<div class="w-full h-full rounded-full bg-[#d2c1dc]"></div>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface">Earl Grey</span>
+</button>
+</div>
+</div>
+<!-- Special Message -->
+<div>
+<label class="text-label-md font-label-md text-on-surface mb-2 block uppercase tracking-wider" for="message">Special Message (Optional)</label>
+<textarea class="w-full bg-surface-container-lowest border-outline-variant text-on-surface rounded-lg focus:ring-primary focus:border-primary placeholder:text-on-surface-variant/50 transition-shadow" required id="message" placeholder="Add a complimentary chocolate plaque inscription..." rows="2"></textarea>
+</div>
+<!-- Delivery Date -->
+<div>
+<label class="text-label-md font-label-md text-on-surface mb-2 block uppercase tracking-wider">Select Delivery Date</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant">calendar_month</span>
+<input class="w-full pl-12 pr-4 py-3 bg-surface-container-lowest border-outline-variant text-on-surface rounded-lg focus:ring-primary focus:border-primary cursor-pointer transition-shadow" required placeholder="Choose a date" type="date" value="Friday, Oct 27"/>
+</div>
+</div>
+<div class="h-[1px] bg-outline-variant/30 w-full my-4"></div>
+<!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row gap-4 pt-2">
+<button class="flex-1 bg-on-surface text-surface py-4 px-6 rounded-lg text-body-md font-body-md font-semibold flex items-center justify-center gap-2 hover:bg-on-surface/90 transition-colors shadow-sm transform active:scale-[0.98]" type="button" onclick="window.location.href='../checkout_velvet_crumb/code.html'">
+<span class="material-symbols-outlined">shopping_bag</span>
+                            Add to Bag - $65.00
+                        </button>
+<button aria-label="Add to Wishlist" class="sm:w-16 h-14 sm:h-auto border border-outline-variant rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined">favorite_border</span>
+</button>
+</div>
+</form>
+<!-- Shipping note -->
+<div class="mt-6 flex items-start gap-3 bg-surface-container-low p-4 rounded-lg">
+<span class="material-symbols-outlined text-primary mt-0.5">local_shipping</span>
+<p class="text-label-sm font-label-sm text-on-surface-variant leading-relaxed">
+                        Hand-delivered by our artisanal courier network. Next-day delivery available for orders placed before 2 PM.
+                    </p>
+</div>
+</div>
+</div>
+<!-- Related Products (Bento Style) -->
+<section class="mt-24 md:mt-32">
+<div class="flex justify-between items-end mb-8">
+<h2 class="text-headline-sm font-headline-sm text-on-surface">Curated Pairings</h2>
+<a class="text-label-md font-label-md text-primary hover:underline flex items-center gap-1 group hidden sm:flex" href="#">
+                    Explore More <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<a class="group block rounded-xl overflow-hidden box-shadow-ambient bg-surface-container-lowest transition-transform hover:-translate-y-1 duration-300" href="#">
+<div class="aspect-square overflow-hidden bg-surface-container">
+<img alt="Macaron Box" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A box of delicate pastel-colored macarons arranged neatly in a premium mint-green presentation box. The setting is bright and luxurious, evoking artisanal French pastry design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgf-ykerMB_KuMrqXYBntd5PweaY3rdtEUipxZqs_Ic0SEg4mVeR-erM3o7UPCBSPrtcHtWgPSIKUc5VCdXm3MUWWkPKyajFkFSmI-yUjOmzyzVHvQxtufHM4ku4v1jc15sZ0ESr92sCamUj6aovGGqQheiKspzXvVYIxfGKVEDA0Fz-a_BbSkoynQ9Acou-u1Saqe6QbSrY_Y49pTleZxBEP9yM0OoMnBpHY0LgzecUrQaKKYsG_sKr-GaTFXye1noAJLqXKsOlyN"/>
+</div>
+<div class="p-5">
+<h3 class="text-body-lg font-body-lg text-on-surface mb-1">Signature Macaron Set</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">$28.00</p>
+</div>
+</a>
+<!-- Card 2 -->
+<a class="group block rounded-xl overflow-hidden box-shadow-ambient bg-surface-container-lowest transition-transform hover:-translate-y-1 duration-300" href="#">
+<div class="aspect-square overflow-hidden bg-surface-container relative">
+<span class="absolute top-3 left-3 px-2 py-1 bg-primary text-on-primary text-[10px] font-label-sm rounded uppercase tracking-wider z-10">New</span>
+<img alt="Earl Grey Tart" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A beautifully crafted Earl Grey and Lemon tartlet on a white ceramic plate, surrounded by scattered loose leaf tea. High aesthetic, bright lighting, soft shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMWAaAw8QfxefZ1tYt3xKgnTtmC6q8lv0yObWtmIQesBW4UceCgxPHdO47u9elkXMqC6DPa0ZdEypZl2Cbyukr2cvN8FEwvXdlUv42t5kQcNoD0_s9QB5q_YaYHFpp9gdoB_mmlkffeBC0dxmxASYFo1m8g5W5KG8eFJ8dANkENNSZQqUb256EAfkGNGEqbr4YbEtQWRD_PDoTiLsVgqCDN6YKOAjuFbJtUeOYg3V_QeqERCyaMQ2h4lHl16bryypnT8TC018BH-R9"/>
+</div>
+<div class="p-5">
+<h3 class="text-body-lg font-body-lg text-on-surface mb-1">Earl Grey Tartlet</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">$9.50</p>
+</div>
+</a>
+<!-- Card 3 -->
+<a class="group block rounded-xl overflow-hidden box-shadow-ambient bg-surface-container-lowest transition-transform hover:-translate-y-1 duration-300" href="#">
+<div class="aspect-square overflow-hidden bg-surface-container">
+<img alt="Wild Honey" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A small, elegant jar of wild floral honey with a wooden dipper resting beside it. Natural sunlight, warm tones, high-end pantry staple look." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQPo6kR1XURxfLM3r3BKew6-q00zD0zKW77AKq8r-FHRIsU7SpX7oLsVnlpweV6zzeY23yiO-oS2SASCZzNwycOCjzLIdHeuQuGRgzyli1yqHPRCIQHLGruo6cMz8AH8VPFAN0yKRwGGYVGFSibHJCTOkHy6h4LNUXZxu5s_w8OBLVlmdO32r43rMWZVM1nNK8eRu_k9i403ec8vomdCek2hVXLE6RQzDN9aDcQuB6snwjH2lYckCGaSNTyPGAmA3km3i1wPY8yQ2K"/>
+</div>
+<div class="p-5">
+<h3 class="text-body-lg font-body-lg text-on-surface mb-1">Wild Floral Honey</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">$14.00</p>
+</div>
+</a>
+<!-- Card 4 (Hidden on small screens for bento symmetry) -->
+<a class="group hidden lg:block rounded-xl overflow-hidden box-shadow-ambient bg-surface-container-lowest transition-transform hover:-translate-y-1 duration-300" href="#">
+<div class="aspect-square overflow-hidden bg-surface-container">
+<img alt="Tea Blend" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A refined box of organic tea blends, featuring delicate floral illustrations on the packaging. Placed on a marble surface with soft, diffused lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYFCxM21-N3xKxiFf9-TrIjmfYGT3m-XUMUs_2WfpDDpIHp9EhMyv-6neu9VLFgGUXBdB9w-XrMU3xQnaLv12LS3x7TEHznrisb4VrJVxRCVsajEcrzvb0zZ5tC0jDWWLWBw1jIxO5q1qU0hEF8oR4nQLpf7bsBWPm3Rt6Ejnk2mnpkIHMxJyZoLQa_YeuZp6C-zNqZ_XD2NLUm5iJmWghs1DMQJf0XZ6ZQ-AuiZxaTiq4Bk5LaTBHXKIC1tBQjfnqjOuYRUlhlwxI"/>
+</div>
+<div class="p-5">
+<h3 class="text-body-lg font-body-lg text-on-surface mb-1">Botanical Tea Blend</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">$22.00</p>
+</div>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-surface-container-highest mt-16 md:mt-32">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-12 md:py-16 w-full max-w-container-max mx-auto text-body-md font-body-md">
+<div class="col-span-1 md:col-span-1 mb-8 md:mb-0 flex flex-col items-start">
+<span class="text-headline-sm font-headline-sm text-primary mb-4 tracking-tight">Velvet &amp; Crumb</span>
+<p class="text-label-md font-label-md text-on-surface-variant mb-6 max-w-[200px] leading-relaxed">
+                    Elevating life's sweet moments with artisanal craftsmanship.
+                </p>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="text-label-md font-label-md text-on-surface uppercase tracking-wider mb-2">Explore</h4>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Join as a Baker</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Sweet Deals Newsletter</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Our Story</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="text-label-md font-label-md text-on-surface uppercase tracking-wider mb-2">Support</h4>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Shipping &amp; Returns</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Us</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="text-label-md font-label-md text-on-surface uppercase tracking-wider mb-2">Connect</h4>
+<div class="flex gap-4">
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#"><span class="material-symbols-outlined">camera_alt</span></a>
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#"><span class="material-symbols-outlined">share</span></a>
+</div>
+</div>
+<div class="col-span-1 md:col-span-4 mt-8 pt-8 border-t border-outline-variant/20 text-center md:text-left text-label-sm font-label-sm text-on-surface-variant">
+                © 2024 Velvet &amp; Crumb Artisanal Marketplace. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>
