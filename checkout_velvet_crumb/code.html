@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script defer src="./cart.js"></script>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -208,82 +209,15 @@
 </section>
 </div>
 <!-- Right Column: Order Summary & Cart -->
-<div class="lg:col-span-5 space-y-6">
-<section class="bg-primary/5 rounded-xl soft-shadow p-6 md:p-8 sticky top-6">
-<h3 class="text-headline-sm font-headline-sm text-on-surface mb-6">Order Summary</h3>
-<!-- Vendor 1 -->
-<div class="mb-6 pb-6 border-b border-outline-variant/30">
-<div class="flex items-center gap-2 mb-3">
-<span class="material-symbols-outlined text-primary text-sm">storefront</span>
-<h4 class="text-label-md font-label-md text-on-surface">From The Golden Whisk</h4>
-</div>
-<div class="flex gap-4 mb-3">
-<div class="w-16 h-16 rounded-lg overflow-hidden shrink-0">
-<img class="w-full h-full object-cover" data-alt="A close-up shot of an elegant, multi-layered crêpe cake on a delicate ceramic plate. Soft, natural daylight illuminates the smooth cream layers and golden edges of the thin crêpes. The background is a blurred, airy patisserie setting with subtle hints of mint and soft pink tones, emphasizing a refined, artisanal aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXODWwVXIQ6Utupe__Ap4xxwBMo1KSmGh_CKiEgo4Uq296D-RZ5utqyep-7PFRWfrWuxgOfbLNfNbJhplkZQspfehdSBBRxb3Cj6NsLL_1L8Oymgx-PydG5iKXEN6k8DJa_H6OfQ0wmi6G2s01M9PW0bwNWFQxI8jY0uDWBnEOUSUgYUfFW87xKHVMkysQT1H78kaKrrKb8mHhTDoPSnmwrg2kCb5Yrh_uOEdtty48gqab3XpVDbvxWLr39z4i9n6EL23zl6jEUVSz"/>
-</div>
-<div class="flex-grow">
-<div class="flex justify-between">
-<span class="text-body-md font-body-md text-on-surface">1x Vanilla Bean Crêpe Cake</span>
-<span class="text-body-md font-body-md text-on-surface">$65.00</span>
-</div>
-<span class="text-label-sm font-label-sm text-secondary bg-secondary-container px-2 py-0.5 rounded-full inline-block mt-1">Gluten-Free</span>
-</div>
-</div>
-<div class="bg-surface-container-lowest rounded-lg p-3 mt-2">
-<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1">Requested Delivery</label>
-<input class="input-elegant w-full rounded-md px-3 py-1.5 text-body-md font-body-md text-sm" type="date" required/>
-</div>
-</div>
-<!-- Vendor 2 -->
-<div class="mb-6 pb-6 border-b border-outline-variant/30">
-<div class="flex items-center gap-2 mb-3">
-<span class="material-symbols-outlined text-primary text-sm">storefront</span>
-<h4 class="text-label-md font-label-md text-on-surface">From Sugar Bloom</h4>
-</div>
-<div class="flex gap-4 mb-3">
-<div class="w-16 h-16 rounded-lg overflow-hidden shrink-0">
-<img class="w-full h-full object-cover" data-alt="A dozen exquisitely decorated cupcakes arranged in a premium gift box. Each cupcake features elaborate, realistic buttercream flowers in pastel shades of pink, white, and soft yellow. The lighting is bright and soft, highlighting the delicate textures of the frosting against a clean, minimalist white table setting, conveying a sense of quiet luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi9Eq2SIgLS7HY2aWlXGK8tH9iz7RrzspUilunSFB4dmlSk8uU36e0Ovg1yRgfbCyGh95yCkmZYGDFsbqhnjxY3mNODAYTHvTWVcRtxyPqPfSblD1aZQAhG8T4b_7YwI3kPsQFht-1dNJRynDSa4jdKPnBZSN8pXyOuTu0R_25dqThXOsaJ060d_hyqSy3FO_BbvPCCYAz5-5tV7XVxwviv931q0iaUReA-olsleLN9pGIxBfsRUWnqGbqDw3PHE85bma1Iko_CcKK"/>
-</div>
-<div class="flex-grow">
-<div class="flex justify-between">
-<span class="text-body-md font-body-md text-on-surface">12x Signature Floral Cupcakes</span>
-<span class="text-body-md font-body-md text-on-surface">$48.00</span>
-</div>
-</div>
-</div>
-<div class="bg-surface-container-lowest rounded-lg p-3 mt-2">
-<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1">Requested Delivery</label>
-<input class="input-elegant w-full rounded-md px-3 py-1.5 text-body-md font-body-md text-sm" type="date" required/>
-</div>
-</div>
+<div class="lg:col-span-5 space-y-6" id="cart-products">
+
 <!-- Totals -->
-<div class="space-y-3 mb-6">
-<div class="flex justify-between text-body-md font-body-md text-on-surface-variant">
-<span>Subtotal</span>
-<span>$113.00</span>
-</div>
-<div class="flex justify-between text-body-md font-body-md text-on-surface-variant">
-<span>Shipping (The Golden Whisk)</span>
-<span>$15.00</span>
-</div>
-<div class="flex justify-between text-body-md font-body-md text-on-surface-variant">
-<span>Shipping (Sugar Bloom)</span>
-<span>$12.00</span>
-</div>
-<div class="flex justify-between text-headline-sm font-headline-sm text-on-surface pt-4 border-t border-outline-variant/30">
-<span>Total</span>
-<span>$140.00</span>
-</div>
-</div>
-<button class="w-full bg-on-surface text-on-primary font-label-md text-label-md py-4 rounded-xl hover:bg-surface-tint transition-colors duration-300 shadow-md flex justify-center items-center gap-2">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">lock</span>
-                        Place Order • $140.00
-                    </button>
-<p class="text-center text-label-sm font-label-sm text-on-surface-variant mt-4">
-                        By placing your order, you agree to our Terms &amp; Conditions and Privacy Policy.
-                    </p>
+
 </section>
 </div>
+</div>
+<div class="space-y-3 mb-6 flex justify-between" id="cart-totals">
+
 </div>
 </main>
 <!-- Footer -->

@@ -8,6 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script defer src="./products.js"></script>
 <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
@@ -198,7 +199,7 @@
 </div>
 <!-- Actions -->
 <div class="flex items-center space-x-4">
-<button class="p-2 text-on-surface-variant hover:text-primary transition-colors duration-300 scale-up-102 transition-transform duration-200">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors duration-300 scale-up-102 transition-transform duration-200" onclick="window.location.href='../checkout_velvet_crumb/code.html'">
 <span class="material-symbols-outlined">shopping_bag</span>
 </button>
 <button class="p-2 text-on-surface-variant hover:text-primary transition-colors duration-300 scale-up-102 transition-transform duration-200 hidden md:block">
@@ -230,105 +231,12 @@
 <!-- Sidebar Filters -->
 
 <!-- Main Content Area -->
-<div class="w-full lg:w-3/4 flex flex-col">
+<div class="w-full lg:w-full flex flex-col">
 <!-- Sort & Count Bar -->
 <!-- Product Grid -->
-<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-gutter gap-y-12">
+<div id="products-container" class="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-gutter gap-y-12">
 <!-- Product Card 1 -->
-<article class="group flex flex-col relative bg-surface rounded-xl overflow-hidden soft-shadow hover-scale">
-<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
-<img alt="Raspberry Rose Tart" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" data-alt="A high-resolution, appetizing photograph of a delicate raspberry rose tart with perfect glazed berries on top, presented on a minimalist white marble surface with soft, diffused light mode lighting and subtle pink blush tones in the background, conveying a premium artisanal patisserie aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBynjYgF9K_O9p1PvTrozVix46_2wvMd6zzpnNhDohtzv9PXW37u2_pxz5FtRuA5Kbm9Gdtq4xgG7XCE2LF3umZXuY7h8_y7tI8n9qGzD2ij-33Hyq8E4i8NayVCkHqDJNu_LOr3yu4utXkAMWVv47rpZ4omUEBRkqc_sYv1_lt0_rH1yTl8YyKbvl2BHmzoVK1r_utbTqI5hks2DEHlJNgodHNGHKBTxwwPjFEnDeN6XD1z0yFvT46ces3eCI8rE_rH2UT92R1S685"/>
-<button aria-label="Add to Favorites" class="absolute top-4 right-4 h-10 w-10 rounded-full bg-surface/80 backdrop-blur-sm flex items-center justify-center text-on-surface hover:text-primary hover:bg-surface transition-all duration-300">
-<span class="material-symbols-outlined text-[20px]" data-icon="favorite_border">favorite_border</span>
-</button>
-<div class="absolute bottom-4 left-4">
-<span class="inline-flex px-3 py-1 bg-surface-container/90 backdrop-blur-sm rounded-full text-label-sm font-label-sm text-primary uppercase tracking-wider">New</span>
-</div>
-</div>
-<div class="p-5 flex flex-col flex-grow">
-<div class="flex justify-between items-start mb-2">
-<h2 class="text-headline-sm font-headline-sm text-on-surface line-clamp-1">Raspberry Rose Tart</h2>
-<span class="text-headline-sm font-headline-sm text-on-surface ml-4">$12</span>
-</div>
-<p class="text-label-sm font-label-sm text-on-surface-variant mb-4 flex items-center">
-<span class="material-symbols-outlined text-[16px] mr-1" data-icon="storefront">storefront</span>
-                                The Golden Whisk
-                            </p>
-<div class="mt-auto pt-4 border-t border-surface-container-high opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<button class="w-full py-3 bg-surface-tint text-on-primary rounded-lg text-label-md font-label-md hover:bg-inverse-surface transition-colors" onclick="window.location.href='../checkout_velvet_crumb/code.html'">Add to Bag</button>
-</div>
-</div>
-</article>
-<!-- Product Card 2 -->
-<article class="group flex flex-col relative bg-surface rounded-xl overflow-hidden soft-shadow hover-scale">
-<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
-<img alt="Pistachio Opera Cake" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" data-alt="A macro shot of beautifully layered pistachio and matcha opera cake, showcasing pristine green and chocolate layers. Set against a clean, warm white background in light mode, with a luxurious, indulgent atmosphere and a hint of soft mint secondary color styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY11_6Zz1rOwUxKg2-_oyjHz100cAqwJgxD0q9c4GpeS0FrgKSvbXHbD6s-sHLiI06Va52D2x-UsDwwnvuRLk2I6OGFc6paZ6ix39noeXYclfB-51s154cUQmGUJeIEHM3mhvimLQkd0LhHz7drkiK1geZbrnayEoLodTKP1gUUR2mhrH_GXtUbZqC7R64UYy_fPwlvk_SujdBf6gqhYItjWWOARt0uFUzTgqrYXDPvmEnC1xyxy4UEO4LgWogFGmxAfuR8Y2Dfn23"/>
-<button aria-label="Add to Favorites" class="absolute top-4 right-4 h-10 w-10 rounded-full bg-surface/80 backdrop-blur-sm flex items-center justify-center text-on-surface hover:text-primary hover:bg-surface transition-all duration-300">
-<span class="material-symbols-outlined text-[20px]" data-icon="favorite_border">favorite_border</span>
-</button>
-</div>
-<div class="p-5 flex flex-col flex-grow">
-<div class="flex justify-between items-start mb-2">
-<h2 class="text-headline-sm font-headline-sm text-on-surface line-clamp-1">Pistachio Opera</h2>
-<span class="text-headline-sm font-headline-sm text-on-surface ml-4">$14</span>
-</div>
-<p class="text-label-sm font-label-sm text-on-surface-variant mb-4 flex items-center">
-<span class="material-symbols-outlined text-[16px] mr-1" data-icon="storefront">storefront</span>
-                                Sugar Bloom Patisserie
-                            </p>
-<div class="mt-auto pt-4 border-t border-surface-container-high opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<button class="w-full py-3 bg-surface-tint text-on-primary rounded-lg text-label-md font-label-md hover:bg-inverse-surface transition-colors" onclick="window.location.href='../checkout_velvet_crumb/code.html'">Add to Bag</button>
-</div>
-</div>
-</article>
-<!-- Product Card 3 -->
-<article class="group flex flex-col relative bg-surface rounded-xl overflow-hidden soft-shadow hover-scale">
-<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
-<img alt="Signature Macaron Box" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" data-alt="An elegant box of six pastel-colored macarons arranged perfectly. Shot from slightly above with soft, flattering light-mode illumination. The background is a subtle creamy surface, emphasizing the delicate, artisanal quality of the confections in a high-end bakery style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnx0nDv1wst7sMc3I5Wnd_iQ_ywqg4LqiBAcgAQO1OgpD5EJBlSNdZ1emasYsVKQjkXve4rWaEUtsgilJv1e-14WI_nAWTf6lzwg73Ft8Jt-xzHtrgL198wvctPX61ORPf8EuouY6JVa4c9Xy60fgT1gK3t9F-X2OWOW7m1UR4i-tSfwwAD0sw03vbZFB8XT7BfguljfmSUZWUJmai_hImRrtFN26Q7v1EsJ-Li-xSR0t9HmfIUc7NKZKPLUjuObHm95ratkePN8P_"/>
-<button aria-label="Add to Favorites" class="absolute top-4 right-4 h-10 w-10 rounded-full bg-surface/80 backdrop-blur-sm flex items-center justify-center text-on-surface hover:text-primary hover:bg-surface transition-all duration-300">
-<span class="material-symbols-outlined text-[20px]" data-icon="favorite_border">favorite_border</span>
-</button>
-<div class="absolute bottom-4 left-4">
-<span class="inline-flex px-3 py-1 bg-secondary-container/90 backdrop-blur-sm rounded-full text-label-sm font-label-sm text-on-secondary-container uppercase tracking-wider">Gluten-Free</span>
-</div>
-</div>
-<div class="p-5 flex flex-col flex-grow">
-<div class="flex justify-between items-start mb-2">
-<h2 class="text-headline-sm font-headline-sm text-on-surface line-clamp-1">Signature Macarons</h2>
-<span class="text-headline-sm font-headline-sm text-on-surface ml-4">$24</span>
-</div>
-<p class="text-label-sm font-label-sm text-on-surface-variant mb-4 flex items-center">
-<span class="material-symbols-outlined text-[16px] mr-1" data-icon="storefront">storefront</span>
-                                Maison Blanche
-                            </p>
-<div class="mt-auto pt-4 border-t border-surface-container-high opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<button class="w-full py-3 bg-surface-tint text-on-primary rounded-lg text-label-md font-label-md hover:bg-inverse-surface transition-colors" onclick="window.location.href='../checkout_velvet_crumb/code.html'">Add to Bag</button>
-</div>
-</div>
-</article>
-<!-- Product Card 4 -->
-<article class="group flex flex-col relative bg-surface rounded-xl overflow-hidden soft-shadow hover-scale">
-<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
-<img alt="Artisan Sourdough" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" data-alt="A rustic yet refined sourdough loaf with intricate scoring patterns, resting on a wooden board. The lighting is bright and airy, capturing a modern bakery light-mode aesthetic with a focus on tactile sophistication and the golden crust of the bread." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgix1YTWIN46ayXDcJkXx1Y10j7qdG_QTlrBWf0HhQh9UORxlS9NrsYxGFclyD1ItLY7deqmG9fc_sR7Fe6OL2vyIndMOcLB7WNhpEsLmeWjipPpf9HgVX2wEGoLojwGI3xgsioA3KpVIyNSlR_04uUiGh3Zmq8z5FNzlBgf5KVRaCC-UikVpzWsUlVBPGdokTNHsqS2cgL7PrP-SE1UmVFs3mXvA3FAjtqg6ahm0QkY2v2oigCHWYjHjvxH8f9rDrDgPA6fc7P1tx"/>
-<button aria-label="Add to Favorites" class="absolute top-4 right-4 h-10 w-10 rounded-full bg-surface/80 backdrop-blur-sm flex items-center justify-center text-on-surface hover:text-primary hover:bg-surface transition-all duration-300">
-<span class="material-symbols-outlined text-[20px]" data-icon="favorite_border">favorite_border</span>
-</button>
-</div>
-<div class="p-5 flex flex-col flex-grow">
-<div class="flex justify-between items-start mb-2">
-<h2 class="text-headline-sm font-headline-sm text-on-surface line-clamp-1">Artisan Sourdough</h2>
-<span class="text-headline-sm font-headline-sm text-on-surface ml-4">$9</span>
-</div>
-<p class="text-label-sm font-label-sm text-on-surface-variant mb-4 flex items-center">
-<span class="material-symbols-outlined text-[16px] mr-1" data-icon="storefront">storefront</span>
-                                Crumb &amp; Crust
-                            </p>
-<div class="mt-auto pt-4 border-t border-surface-container-high opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<button class="w-full py-3 bg-surface-tint text-on-primary rounded-lg text-label-md font-label-md hover:bg-inverse-surface transition-colors" onclick="window.location.href='../checkout_velvet_crumb/code.html'">Add to Bag</button>
-</div>
-</div>
-</article>
-<!-- Additional cards omitted for brevity in this example, but would continue grid -->
+
 </div>
 
 </div>
